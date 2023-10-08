@@ -26,7 +26,7 @@ LRESULT CALLBACK HookCallback(int nCode, WPARAM wParam, LPARAM lParam)
         switch (wParam)
         {
 
-            //----Write your kbhooks here----
+            //---KB Hooks---
         case WM_KEYDOWN:
             if (GetKeyState(VK_CONTROL) && GetKeyState(VK_SHIFT))
             {
